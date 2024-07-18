@@ -81,8 +81,8 @@ class MainFragment : Fragment() {
             tvSunrise.text = it.sunrise
             tvSunset.text = it.sunset
             tvCountry.text = it.country
-            tvMoonset.text= it.moonset
-            tvMoonrise.text= it.moonrise
+            tvMoonset.text = it.moonset
+            tvMoonrise.text = it.moonrise
         }
     }
 
@@ -98,8 +98,11 @@ class MainFragment : Fragment() {
             Request.Method.GET,
             url,
             { result -> parseWeatherData(result) },
-            { error -> Log.e("1234", "Error: $error")
-            Toast.makeText(context, "Напишите город правильно: $error", Toast.LENGTH_SHORT).show()}
+            { error ->
+                Log.e("1234", "Error: $error")
+                Toast.makeText(context, "Напишите город правильно: $error", Toast.LENGTH_SHORT)
+                    .show()
+            }
         )
         queue.add(request)
     }
@@ -161,6 +164,7 @@ class MainFragment : Fragment() {
         )
         model.liveDataCurrent.value = item
     }
+
     override fun onResume() {
         super.onResume()
         checkLocation()
@@ -192,7 +196,11 @@ class MainFragment : Fragment() {
                             requestWeatherData("${location.latitude},${location.longitude}")
                         } else {
                             Log.e("1234", "Location is null")
-                            Toast.makeText(context, "Unable to determine location", Toast.LENGTH_LONG).show()
+                            Toast.makeText(
+                                context,
+                                "Unable to determine location",
+                                Toast.LENGTH_LONG
+                            ).show()
                         }
                     } else {
                         Log.e("1234", "Failed to get location: ${it.exception}")
@@ -219,8 +227,8 @@ class MainFragment : Fragment() {
         } else {
             Toast.makeText(context, "Google Play Services not available", Toast.LENGTH_LONG).show()
         }
-        ibSearch.setOnClickListener{
-            DialogManager.searchByNameDialog(requireContext(), object : DialogManager.Listener{
+        ibSearch.setOnClickListener {
+            DialogManager.searchByNameDialog(requireContext(), object : DialogManager.Listener {
                 override fun onClick(name: String?) {
                     name?.let { it1 -> requestWeatherData(it1) }
                 }
@@ -230,11 +238,11 @@ class MainFragment : Fragment() {
 
     }
 
-    private fun checkLocation(){
-        if(isLocationEnabled()){
+    private fun checkLocation() {
+        if (isLocationEnabled()) {
             getLocation()
         } else {
-            DialogManager.locationSettingsDialog(requireContext(), object : DialogManager.Listener{
+            DialogManager.locationSettingsDialog(requireContext(), object : DialogManager.Listener {
                 override fun onClick(name: String?) {
                     startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
                 }
@@ -260,7 +268,9 @@ class MainFragment : Fragment() {
 
     private fun isLocationEnabled(): Boolean {
         val lm = activity?.getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        return lm.isProviderEnabled(LocationManager.GPS_PROVIDER) || lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+        return lm.isProviderEnabled(LocationManager.GPS_PROVIDER) || lm.isProviderEnabled(
+            LocationManager.NETWORK_PROVIDER
+        )
     }
 
     private fun isGooglePlayServicesAvailable(): Boolean {

@@ -4,4 +4,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="powered_by">Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></string>
     <string name="weather_api_logo_desc">Weather data by WeatherAPI.com</string>
+    <string name="city_name">Madrid</string>
+    <string name="data">08/07/2024 15:02</string>
+    <string name="current_temp">38`C</string>
+
 </resources>
