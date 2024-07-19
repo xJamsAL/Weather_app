@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherAPP</string>
+    <string name="powered_by">Работает на ></string>
+    <string name="city_name">Мадрид</string>
+    <string name="data">08/07/2024 15:02</string>
+    <string name="current_temp">38`C</string>
+    <string name="region_name">Испания</string>
+    <string name="current_min_max">36/47</string>
+    <string name="risse_set">9:00AM</string>
+    <string name="sunny">Солнечно</string>
+    <string name="tab_item_hour">По часам</string>
+    <string name="tab_item_Days">По дням</string>
+</resources>
