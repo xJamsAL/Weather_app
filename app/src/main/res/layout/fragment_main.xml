@@ -44,7 +44,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/cardo"
-                android:text="28/06/2024 13:30"
+                android:text="@string/data"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cardo"
-                android:text="Spain"
+                android:text="@string/region_name"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/tvCity"
@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cardo"
-                android:text="Madrid"
+                android:text="@string/city_name"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -90,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cardo"
-                android:text="20`C"
+                android:text="@string/current_temp"
                 android:textColor="@color/white"
                 android:textSize="40sp"
                 android:textStyle="bold"
@@ -103,21 +103,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cardo"
-                android:text="Sunny"
-                android:textSize="20dp"
+                android:text="@string/sunny"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvCurrentTemp"/>
+                app:layout_constraintTop_toBottomOf="@+id/tvCurrentTemp" />
 
             <TextView
                 android:id="@+id/tvMaxMin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cardo"
-                android:text="34/25"
+                android:text="@string/current_min_max"
                 android:textColor="@color/white"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvCondition" />
@@ -175,7 +175,7 @@
                     android:id="@+id/tvSunrise"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="9:00"
+                    android:text="@string/risse_set"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="@+id/ivSunrise"
                     app:layout_constraintStart_toStartOf="@+id/ivSunrise"
@@ -197,7 +197,7 @@
                     android:id="@+id/tvSunset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="18:00"
+                    android:text="@string/risse_set"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="@+id/ivSunset"
                     app:layout_constraintStart_toStartOf="@+id/ivSunset"
@@ -241,7 +241,7 @@
                     android:id="@+id/tvMoonrise"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="9:00"
+                    android:text="@string/risse_set"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="@+id/ivMoonrise"
                     app:layout_constraintStart_toStartOf="@+id/ivMoonrise"
@@ -272,7 +272,7 @@
                     android:id="@+id/tvMoonset"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="18:00"
+                    android:text="@string/risse_set"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="@+id/ivMoonset"
                     app:layout_constraintStart_toStartOf="@+id/ivMoonset"
@@ -313,12 +313,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Hours" />
+            android:text="@string/tab_item_hour" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Days" />
+            android:text="@string/tab_item_Days" />
 
     </com.google.android.material.tabs.TabLayout>
 
