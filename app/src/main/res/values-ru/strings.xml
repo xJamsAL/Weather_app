@@ -11,4 +11,6 @@
     <string name="sunny">Солнечно</string>
     <string name="tab_item_hour">По часам</string>
     <string name="tab_item_Days">По дням</string>
+    <string name="search_city_title">Название города:</string>
+    <string name="search_city">Введите название города</string>
 </resources>

@@ -11,6 +11,8 @@
     <string name="current_min_max">36/47</string>
     <string name="risse_set">9:00AM</string>
     <string name="sunny">Sunny</string>
-<string name="tab_item_hour">HOURS</string>
+    <string name="tab_item_hour">HOURS</string>
     <string name="tab_item_Days">DAYS</string>
+    <string name="search_city_title">City name:</string>
+    <string name="search_city">Enter city name</string>
 </resources>
