@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">WeatherAPP</string>
-    <string name="powered_by">Работает на ></string>
+    <string name="powered_by">Работает на <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></string>
     <string name="city_name">Мадрид</string>
     <string name="data">08/07/2024 15:02</string>
     <string name="current_temp">38`C</string>
